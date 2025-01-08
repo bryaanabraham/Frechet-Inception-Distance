@@ -13,5 +13,7 @@
     pip install -r requirements.txt
 
 ### Run the file
-    python main.py
+    python FID_score.py 
+
+### Or to edit the code, use the modular version with 'main.py'
 
