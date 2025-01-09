@@ -1,6 +1,8 @@
 
 # Blended Latent Diffusion
 
+*This repository is a clone of [omriav](https://github.com/omriav/blended-diffusion) with some updates*
+
 # Installation
 Install the conda virtual environment:
 ```bash

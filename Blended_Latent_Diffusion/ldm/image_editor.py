@@ -1,3 +1,5 @@
+from transformers import AutoModel
+from huggingface_hub import login
 import argparse
 import os
 from pathlib import Path
@@ -354,6 +356,11 @@ class ImageEditor:
         sorted_samples = samples[argsort_distances]
 
         return sorted_samples
+
+    def model_inference(self):
+        login(token="your_huggingface_access_token")
+        model = AutoModel.from_pretrained("model_name_or_path", use_auth_token=True)
+        return model
 
     def edit_image(self):
         self.opt = self.get_arguments()
